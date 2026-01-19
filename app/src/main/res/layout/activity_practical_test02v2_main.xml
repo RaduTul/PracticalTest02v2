@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/server_port" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Server Port" android:inputType="number"/>
+    <Button android:id="@+id/start_server" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Start Server" />
+
+    <Space android:layout_width="match_parent" android:layout_height="20dp" />
+
+    <EditText android:id="@+id/operator1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Operator 1" android:inputType="numberSigned"/>
+    <EditText android:id="@+id/operator2" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Operator 2" android:inputType="numberSigned"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/add_button" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Add" />
+        <Button android:id="@+id/mul_button" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Mul" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/result_text" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:text="rezultat: " />
+</LinearLayout>
