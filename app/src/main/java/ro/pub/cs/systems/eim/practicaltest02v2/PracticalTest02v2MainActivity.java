@@ -97,7 +97,6 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
         }
     }
 
-    // --- CLIENT LOGIC ---
     class ClientThread extends Thread {
         private String host, op, val1, val2;
         private int port;
