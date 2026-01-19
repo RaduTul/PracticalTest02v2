@@ -71,7 +71,7 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                  PrintWriter writer = new PrintWriter(socket.getOutputStream(), true)) {
 
-                String request = reader.readLine(); // Format: "add,2,3"
+                String request = reader.readLine();
                 if (request != null) {
                     String[] parts = request.split(",");
                     String type = parts[0];
@@ -80,9 +80,10 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
                     long result = 0;
 
                     if (type.equals("add")) {
-                        Thread.sleep(2000); // Simularea operatiei costisitoare (Cerința 5b)
+                        Thread.sleep(2000);
                         result = val1 + val2;
                     } else {
+                        Thread.sleep(2000);
                         result = val1 * val2;
                     }
 
