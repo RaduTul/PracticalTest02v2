@@ -65,7 +65,7 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
     class CommunicationThread extends Thread {
         private Socket socket;
         public CommunicationThread(Socket socket) { this.socket = socket; }
-
+//a
         @Override
         public void run() {
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
