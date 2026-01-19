@@ -43,7 +43,7 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
         new ClientThread("127.0.0.1", Integer.parseInt(port), operation, op1, op2, resultTv).start();
     }
 
-    // --- SERVER LOGIC ---
+
     class ServerThread extends Thread {
         private int port;
         private ServerSocket serverSocket;
