@@ -97,7 +97,7 @@ public class PracticalTest02v2MainActivity extends AppCompatActivity {
             } catch (Exception e) { Log.e("COMM", e.getMessage()); }
         }
     }
-
+//6
     class ClientThread extends Thread {
         private String host, op, val1, val2;
         private int port;
